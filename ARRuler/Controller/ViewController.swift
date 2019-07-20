@@ -12,9 +12,14 @@ import ARKit
 
 class ViewController: UIViewController, ARSCNViewDelegate {
     
+    // Outlets
     @IBOutlet var sceneView: ARSCNView!
     
+    // Variables
+    var dotNodes = [SCNNode]()
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
         // Set the view's delegate
@@ -25,6 +30,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        
         super.viewWillAppear(animated)
         
         // Create a session configuration
@@ -32,13 +38,16 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         // Run the view's session
         sceneView.session.run(configuration)
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
+        
         super.viewWillDisappear(animated)
         
         // Pause the view's session
         sceneView.session.pause()
+        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -70,6 +79,27 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         )
         
         sceneView.scene.rootNode.addChildNode(dotNode)
+        
+        dotNodes.append(dotNode)
+        
+        if dotNodes.count >= 2 {
+            calculate()
+        }
+        
+    }
+    
+    func calculate() {
+        
+        let start = dotNodes[0]
+        let end = dotNodes[1]
+        
+        let distance = sqrt(
+            pow(end.position.x - start.position.x, 2) +
+            pow(end.position.y - start.position.y, 2) +
+            pow(end.position.z -  start.position.z, 2)
+        )
+        
+        print(distance)
         
     }
     
