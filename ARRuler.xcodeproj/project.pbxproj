@@ -56,15 +56,47 @@
 		7267580522E3D4FD009C2600 /* ARRuler */ = {
 			isa = PBXGroup;
 			children = (
-				7267580622E3D4FD009C2600 /* AppDelegate.swift */,
+				7267581C22E3D515009C2600 /* Controller */,
+				7267581A22E3D50D009C2600 /* Model */,
+				7267581D22E3D51A009C2600 /* Supporting Files */,
+				7267581B22E3D512009C2600 /* View */,
+			);
+			path = ARRuler;
+			sourceTree = "<group>";
+		};
+		7267581A22E3D50D009C2600 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7267581B22E3D512009C2600 /* View */ = {
+			isa = PBXGroup;
+			children = (
 				7267580822E3D4FD009C2600 /* art.scnassets */,
-				7267580A22E3D4FD009C2600 /* ViewController.swift */,
 				7267580C22E3D4FD009C2600 /* Main.storyboard */,
 				7267580F22E3D4FF009C2600 /* Assets.xcassets */,
 				7267581122E3D4FF009C2600 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7267581C22E3D515009C2600 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7267580622E3D4FD009C2600 /* AppDelegate.swift */,
+				7267580A22E3D4FD009C2600 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7267581D22E3D51A009C2600 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				7267581422E3D4FF009C2600 /* Info.plist */,
 			);
-			path = ARRuler;
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +320,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8E7FB8SA95;
-				INFOPLIST_FILE = ARRuler/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ARRuler/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8E7FB8SA95;
-				INFOPLIST_FILE = ARRuler/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ARRuler/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
