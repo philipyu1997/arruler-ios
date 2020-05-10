@@ -116,7 +116,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         textNode = SCNNode(geometry: textGeometry)
         textGeometry.firstMaterial?.diffuse.contents = UIColor.red
         textNode.position = SCNVector3(x: position.x, y: position.y + 0.01, z: position.z)
-        textNode.scale = SCNVector3(x: 0.01, y: 0.01, z: 0.01)
+        textNode.scale = SCNVector3(x: 0.001, y: 0.001, z: 0.001)
         
         sceneView.scene.rootNode.addChildNode(textNode)
         
