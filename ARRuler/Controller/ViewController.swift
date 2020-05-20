@@ -12,12 +12,12 @@ import ARKit
 
 class ViewController: UIViewController, ARSCNViewDelegate {
     
-    // Outlets
+    // MARK: - Outlets
     @IBOutlet var sceneView: ARSCNView!
     
-    // Variables
-    var dotNodes = [SCNNode]()
-    var textNode = SCNNode()
+    // MARK: - Properties
+    private var dotNodes = [SCNNode]()
+    private var textNode = SCNNode()
     
     override func viewDidLoad() {
         
@@ -70,7 +70,9 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
     }
     
-    func addDot(at hitResult: ARHitTestResult) {
+    // MARK: - Private Function Section
+    
+    private func addDot(at hitResult: ARHitTestResult) {
         
         let dotGeometry = SCNSphere(radius: 0.005)
         let material = SCNMaterial()
@@ -93,7 +95,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
     }
     
-    func calculate() {
+    private func calculate() {
         
         let start = dotNodes[0]
         let end = dotNodes[1]
@@ -107,7 +109,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
     }
     
-    func updateText(text: String, atPosition position: SCNVector3) {
+    private func updateText(text: String, atPosition position: SCNVector3) {
         
         textNode.removeFromParentNode()
         
