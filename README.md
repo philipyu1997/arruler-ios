@@ -21,8 +21,8 @@ ARRuler is an augmented reality app that measures objects in the real world.
 
 Here's a GIF of how the app works:
 
-<img src="https://user-images.githubusercontent.com/35745973/81511986-feddf280-92d1-11ea-815b-d00fd04c6f47.gif" width=250><br>
+<img src="https://user-images.githubusercontent.com/35745973/81511986-feddf280-92d1-11ea-815b-d00fd04c6f47.gif" width=250>
 
 ## Credits
 
->This is a companion project to The App Brewery's Complete App Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
+>This is a companion project to The App Brewery's Complete App Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/).
