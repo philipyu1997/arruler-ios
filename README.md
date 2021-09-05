@@ -21,7 +21,7 @@ ARRuler is an augmented reality app that measures objects in the real world.
 
 Here's a GIF of how the app works:
 
-<img src="https://github.com/py415/app-resources/blob/master/ios/ios-arruler.gif" width=250>
+<img src="https://raw.githubusercontent.com/py415/app-resources/master/ios/ios-arruler.gif" width="250" />
 
 ## Credits
 
